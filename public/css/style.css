@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+}
+
+.replycomm {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.replyhead {
+    cursor: pointer;
+}
+.reply-comm-name {
+    font-weight: bold;
+    float: left;
+}
+.reply-comm-text {
+    float: left;
+}
+.section {
+    margin: 15px 0;
+}
+.post-form-group {
+    margin: 0 auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+.btn-btn {
+    float: right;
+}
+.post-box , .comment-box{
+    margin-left: 50px;
+}
+
+.dashboard-form-tag {
+    margin-left: 15px;
+}
+
+.form_group {
+    margin: 0 auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+.form-input-tagName {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.createTag_form_btn {
+    float: right;
+    margin: 10px;
+}
+
+.form-input-postName {
+    float: right;
+    width: 240px;
+    overflow: hidden;
+}
+
+.post_title {
+    float: left;
+}
+
+.btn-show-post {
+    float: left;
+    margin-top: 26px;
+}
+
+.form-input-select {
+    float: left;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.create-post-section {
+    overflow: hidden;
+}
+
+.input-textarea-group {
+    float: left;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.form-input-select-inPost {
+    float: left;
+    width: 10%;
+
+}
+
+.show-box-title {
+    margin: 10px 0;
+}
+
+.multiselect_show {
+    width: 125px;
+}
+
+.edit-title {
+    width: 70%;
+    float: left;
+}
+
+.edit-select {
+    width: 30%;
+    float: right;
+}
