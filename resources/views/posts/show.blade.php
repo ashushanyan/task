@@ -2,6 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     <a href="/posts" class="btn btn-primary">Go back ->/posts</a>
     <div class="show-box-title" style="overflow: hidden;">
         <div class="post_title">
@@ -103,4 +104,7 @@
         </div>
         <button type="submit" class="btn btn-primary btn-right">Submit</button>
     </form>
+
+
+
 @endsection

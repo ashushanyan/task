@@ -21,6 +21,7 @@ class PostsController extends Controller
 {
     public function index(IndexRequest $request, IndexDataProvider $provider, Tag $tag): View
     {
+//        dd($tag->all()[0]->posts());
         return view('posts.index')
             ->with([
                 'posts'    => $provider->getData(),
@@ -67,6 +68,7 @@ class PostsController extends Controller
 
     public function update(UpdateRequest $request, Post $post): RedirectResponse
     {
+//        dd($post);
         return redirect('/posts')
             ->with(
                 'success',

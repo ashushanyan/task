@@ -3,9 +3,6 @@
 namespace App\Http\Requests\Post;
 
 
-use App\Post;
-use App\Tag;
-use App\User;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,7 +23,6 @@ class StoreRequest extends FormRequest
 
     public function persist(): self
     {
-//        dd();
         if($this->tag_id == null){
             Auth::user()->posts()
                 ->create($this->getProcessedData());

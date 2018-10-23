@@ -14,5 +14,11 @@
         </div>
         <button type="submit" class="btn btn-primary btn-right">Submit</button>
     </form>
+
+    {{--Sctipt--}}
+
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
 @endsection
 

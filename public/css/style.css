@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    text-decoration: none;
 }
 
 .replycomm {
@@ -108,3 +109,242 @@
     width: 30%;
     float: right;
 }
+
+.table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn-messages {
+    margin-right: 100px;
+    float: right;
+}
+
+.message-box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.message-box-text {
+    height: 370px;
+    overflow: auto;
+    background-color: #FFFFFF;
+    /*background-image: url('../../images/chat_background/background.jpg');*/
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*border-radius: 7px;*/
+    border: 0.5px solid #e5e5e5;
+}
+
+.message-user-from {
+    width: 15%;
+    float: left;
+    text-align: center;
+
+}
+.message-user-to {
+    width: 15%;
+    float: left;
+    text-align: center;
+}
+
+.message-user-to-text {
+    color: #000000;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color:rgba(255, 0, 0, 0.4);
+}
+
+.message-user-from-text {
+    color: #000000;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(116, 255, 233, 0.24);
+}
+
+.btn-messages-send {
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-container > div {
+    min-width: 100px;
+    margin: 10px 0;
+}
+
+.users-for-chat{
+    width: 100%;
+    margin: 10px 0;
+}
+.users-for-chat-text > span, .my-messages-box > span {
+    position: absolute;
+    font-size: 8px;
+    bottom:2px;
+    right: 12px;
+}
+
+.users-for-chat-text{
+    position: relative;
+    background-color: rgb(241, 240, 240);
+    color: rgba(0, 0, 0, 1);
+    border-radius: 1.3em;
+    min-width: 100px;
+    margin: 0 10px;
+    word-wrap: break-word;
+    max-width: 45%;
+    padding: 5px 31px 14px 14px;
+    display: inline-block;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.users-for-chat-name {
+    width: 33px;
+    height: 33px;
+    border-radius: 35px;
+    background-color: rgb(241, 240, 240);
+    float: left;
+    text-align: center;
+    font-size: 21px;
+    /*padding: 8px 0;*/
+    margin-left:10px ;
+}
+
+.my-messages {
+    width: 100%;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.my-messages-box  {
+    position: relative;
+    border-radius: 1.3em 0 1.3em  1.3em;
+    background-color: rgb(68, 190, 199);
+    padding: 5px 31px 14px 14px;
+    display: inline-block;
+    color: #FFFFFF;
+    min-width: 100px;
+    text-align: left;
+    max-width: 45%;
+    word-wrap: break-word;
+    margin-right: 15px;
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+}
+/*.my-messages-box > span  {*/
+    /*position: absolute;*/
+    /*font-size: 8px;*/
+    /*bottom:2;*/
+    /*right: 12px;*/
+/*}*/
+
+/*.my-messages-box > div {*/
+    /*font-size: 10px;*/
+    /*text-align: right;*/
+    /*margin:-8px -18px 0 0px;*/
+/*}*/
+
+.user_photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    background-color: rgba(35, 85, 179, 0.24);
+    padding: 4px 17px;
+    float: left;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.input_button_group {
+    width:  40%;
+    float: right;
+    margin-top: 17px
+}
+
+.input_button_group > input {
+    margin-left: 20px;
+    height:  32px;
+    width: 33%;
+}
+
+.input_button_group > i {
+    margin-left: 26px;
+    font-size: 26px;
+}
+
+.top-contain-chat {
+    position: relative;
+}
+
+.members {
+    position: absolute;
+    right: -13%;
+    top: 0px;
+}
+
+.show-textarea {
+    resize: none;
+    border-radius: 0;
+    border:0.5px solid #e5e5e5;
+    border-top: none;
+}
+
+
+
+
+/**/
+.tooltipo {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: rgb(99, 107, 111);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 5px 0;
+    left: 30%;
+    top: 80%;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipo:hover .tooltiptext {
+    visibility: visible;
+}
+
+/**/

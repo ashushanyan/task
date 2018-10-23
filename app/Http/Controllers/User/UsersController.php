@@ -3,16 +3,13 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Http\DataProviders\User\IndexDataProvider;
-use App\Http\Requests\User\IndexRequest;
-use App\Transformers\UserTransformer;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
 {
-    public function index(IndexRequest $request, IndexDataProvider $provider)
+    public function index()
     {
         //
     }
@@ -29,7 +26,7 @@ class UsersController extends Controller
 
     public function show($id)
     {
-        //
+
     }
 
     public function edit($id)

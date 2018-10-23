@@ -14,22 +14,19 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
-    {{--C:\xampp\htdocs\blog\node_modules\font-awesome\css\font-awesome.css--}}
-    {{--<link href="C:\xampp\htdocs\blog\node_modules\font-awesome\css\font-awesome.css" rel="stylesheet">--}}
 </head>
 <body>
-    <div id="app">   
+    <div id="app">
         @include('inc.navbar')
         <div class="container">
             @include('inc/messages')
             @yield('content')
         </div>
-    </div> 
+    </div>
+
     <!-- Scripts -->
+
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace( 'article-ckeditor' );
-    </script>
 </body>
 </html>

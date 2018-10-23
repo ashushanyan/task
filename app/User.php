@@ -20,6 +20,16 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function groupMessages(): HasMany
+    {
+        return $this->hasMany(GroupMessage::class);
+    }
+
+    public function messages(): HasMany
+    {
+        return $this->hasMany(Message::class);
+    }
+
     public function scopeExtended(Builder $query): Builder
     {
         return $query->whereNotNull('name');
@@ -35,8 +45,9 @@ class User extends Authenticatable
         return $this->hasMany(Post::class);
     }
 
-    public function tags(): HasMany
+    public function groups()
     {
-        return $this->hasMany(tag::class);
+        return $this->belongsToMany(Group::class, 'group_user');
     }
+
 }

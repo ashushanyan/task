@@ -3,13 +3,10 @@
 namespace App\Http\DataProviders\Post;
 
 
-use App\Http\DataProviders\AbstractDataProvider;
-use App\Http\Filters\PostFilter;
 use Illuminate\Http\Request;
 use App\Post;
-use App\Tag;
 
-class IndexDataProvider extends AbstractDataProvider
+class IndexDataProvider
 {
     private $request;
 
@@ -22,6 +19,7 @@ class IndexDataProvider extends AbstractDataProvider
     {
         return  Post::with('user', 'tags')
                     ->where('title', 'like', '%'.$this->request['search_key'].'%')
+                    ->orWhere('body', 'like', '%'.$this->request['search_key'].'%')
                     ->whereHas('tags', $this->filterByTags())
                     ->latest()
                     ->get();

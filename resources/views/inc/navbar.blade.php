@@ -24,7 +24,9 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="/posts">Posts</a></li>
+                <li></li>
             </ul>
+
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
@@ -51,6 +53,10 @@
                         </ul>
                     </li>
                 @endif
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right tooltipo">
+                <li><a href="/chat"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> <span class="tooltiptext">Messages</span></li>
             </ul>
         </div>
     </div>

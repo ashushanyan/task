@@ -14,13 +14,15 @@ use Illuminate\Http\Request;
 
 
 */
-DB::listen(function ($query)  use (&$count, &$logged){
-    try {
-        Log::info(Illuminate\Support\Str::replaceArray('?', $query->bindings, $query->sql));
-    } catch (\Exception $e) {
-        Log::info($query->sql, $query->bindings);
-    }
-});
+
+
+//DB::listen(function ($query)  use (&$count, &$logged){
+//    try {
+//        Log::info(Illuminate\Support\Str::replaceArray('?', $query->bindings, $query->sql));
+//    } catch (\Exception $e) {
+//        Log::info($query->sql, $query->bindings);
+//    }
+//});
 
 
 
