@@ -35,7 +35,7 @@ class MessagePosted implements ShouldBroadcast
     public function broadcastWith()
     {
         return [
-            'text'      => $this->message->text,
+            'text'         => $this->message->text,
             'created_at'   => $this->message->created_at,
             'user'         => [
                     'name' => $this->message->user->name

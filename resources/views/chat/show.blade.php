@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    {{--<example></example>--}}
     <div class="message-box">
         <h3 class="well">{{$userForChat->name}}</h3>
         <div class="message-box-text" id="message-section">
@@ -21,20 +20,15 @@
                        </div>
                    @endif
                @endforeach
-                   <div v-if="message.length || message.user">
+                   <div id="message_event_box">
                        <div class="users-for-chat-box" >
-                           <div class="users-for-chat-name">@{{message.user.name.charAt(0)}}</div>
+                           <div id="chat_user_name" class="users-for-chat-name">A</div>
                            {{--@{{$message->created_at->diffForHumans() }}--}}
-                           <div class="users-for-chat-text"> @{{ message.text }}<span>@{{$message.user.name}} </span></div>
+                           <div id="chat_user_message_text" class="users-for-chat-text">
+                               <span id="chat_user_message_user_name">  asd</span>
+                           </div>
                        </div>
-
-                       {{--<div class="users-for-chat">--}}
-                           {{--<div class="users-for-chat-name">{{ substr($message->user['name'], 0, 1)}}</div>--}}
-                           {{--<div class="users-for-chat-name"> {{ "/img" }}</div>--}}
-
-                       {{--</div>--}}
                    </div>
-
             @else
                <div style="padding: 14%;text-align: center;">
                    There ara no messages :(
@@ -55,27 +49,4 @@
 
 
 @endsection
-
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>--}}
-{{--<script>--}}
-    {{--// Vue.component('example', require('./components/Example.vue'));--}}
-
-    {{--const app = new Vue({--}}
-        {{--el: '#app',--}}
-        {{--data: {--}}
-            {{--message: {},--}}
-            {{--messageGroupChat: {}--}}
-        {{--},--}}
-        {{--created() {--}}
-            {{--Echo.channel('chatroom')--}}
-                {{--.listen('MessagePosted', (e) => {--}}
-                    {{--this.message = e;--}}
-                {{--});--}}
-            {{--this.message = {};--}}
-            {{--Echo.channel('groupChatRoom')--}}
-                {{--.listen('GroupMessagePosted', (e) => {--}}
-                    {{--this.messageGroupChat = e;--}}
-                {{--});--}}
-        {{--},--}}
-    {{--});--}}
-{{--// </script>--}}
+<script src="{{ asset('js/main.js') }}"></script>
